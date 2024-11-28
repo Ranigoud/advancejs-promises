@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>advance js</title>
+</head>
+<body>
+    <h1> Advance Topics:</h1>
+    <script>
+        /*  -----------------------------------------------
+    // ES6Adavance javascript topics:
+    /*1.template strings:
+      
+      var example="cricket";
+      document.write("i like playing:"+example+"<br>")
+       document.write(`i like playing ${example}<br><br>Happy to see you <br>`)
+       console.log(`i like playing ${example}<br><br>`)
+    //    ------------------------------------------
+       //arrow function;
+       //function
+       function apple(){
+        document.write(`this is apple <br>`)
+       }
+       apple()
+       //function expresion and anynomouse function
+       const mango=function(){
+        document.write(`this is mango <br>`)
+       }
+       mango()
+       //arrow function:
+       const graps=()=>{document.write(`graps color black <br>`)}
+             graps()
+      const fruits=(a,b)=>{document.write(a+b)}
+         fruits(2,5)*/
+    // ---------------------------------------------------
+    /*loops:
+    1,for of=>[array's] 
+    2,for in{object's} 
+    const myValues=[1,2,3,4]
+    const students=["Renu","Ramu","Rani","Radha"] 
+    //3 using foreach() findout array value  
+      myValues.forEach(function(a){
+        // document.write(a+"<br>"+"\n")
+        document.write(a*2+"<br>")
+        document.write("<br>")
+      }
+    )
+    //for of ------------------------------------------
+    /*syntax for(const arr of myValues ){
+    }
+   for(const arr of myValues){
+    document.write(arr*5+"<br>")
+   }
+  //  -----------------------
+  for(const arr of students){
+    document.write(arr+"<hr>")
+  }
+  // ---------------------------------------------------
+  //for in=>{object's}
+  const cities={
+    one:"Hyd",
+    two:"Sec",
+    three:"Banj",
+    four:"Koti"
+  }
+  for(let arr in cities){
+    // document.write(arr+"<hr>")//it returns keys
+    document.write(cities[arr]+"<hr>" )
+  }
+  // --------------------------------------------
+  //RESTOPERATOR:(...)FUNCTION DECLARATION SHOW//SPREAD OPERATOR FUNCTION CALLING
+      function sampleRest(name,...myMarks){
+        let exampleMarks=0;
+        for(let i in myMarks){
+               exampleMarks+=myMarks[i]
+              
+        }
+        document.write(name,exampleMarks)
+
+      } 
+      sampleRest("Rani", 20,10,30,40+"<hr>")
+      // ------------------------------------------------
+      // SPREAD OPERATOR: (...) FUNCTION CALLING IN=>combine variable using
+      //Array:
+      const values=[1,2,3,4,5]
+      const names=["e","f","g","h"]
+      const allinone=[...values,...names]
+      document.write(allinone+"<br>")
+      // ------------------------------------------------
+      //objects
+      const firstName={
+        fname:"Rani"
+      }      const lastName={
+        lname:"goud"
+      }
+      const fullName={...firstName,...lastName}
+      // console.log(fullName)
+      document.write(fullName+"<hr>")
+      document.write(fullName.fname, fullName.lname)*/
+      
+      // -     ----------------------------------------
+      /* DESTRUCTURING:
+        const sampleNumbers=[1,2,3,4,5,"Tanvika"]
+            //  document.write(sampleNumbers[2])
+            //  destucture values
+        const[foure,apple,mango,lemon,umbrella,rain] =sampleNumbers  
+        document.write("My Name is:"+rain) 
+        document.write("<br>")
+        //object destructuring
+        const Person={
+          name:"Tanuvika",
+          age:3,
+          fname:"Ravi",
+          mname:"Rani",
+          city:"Hyd"
+
+        } 
+        //old way: document.write(person.name)
+        const{name,age,fname,mname,city}=Person
+          document.write("My hero Name:"+fname)*/
+          // ---------------------------------------------------
+          /* synchronous:code run execution Stop:
+          console.log("code1")
+          console.log("code2")
+          console.log("code3")
+          console.log("code4")
+           console.log("code5")*/
+          /*Asynchronouse code delay using timesetOUT FUNCTION  --------------------------
+             console.log("code1")
+             console.log("code2")
+           setTimeout(()=>{
+            console.log("code3")
+           },3000)
+             console.log("code4")
+             console.log("code5")*/
+            //  -------------------------------------------------------
+            // Higher order function:*/
+           
+    </script>
+</body>
+</html>       
+   

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js advance topics</h1>
+    <script>
+        /*asynchronose dele cod
+      console.log("Welcome");
+
+const Register = (apple) => {
+  setTimeout(() => {
+    console.log("Please Register");
+    apple()
+  }, 5000); // 2-second delay
+};
+
+const Login = (mango) => {
+  setTimeout(() => {
+    console.log("Please Login");
+    mango()
+  }, 3000); // 4-second delay
+};
+
+const Thank = () => {
+  setTimeout(() => {
+    console.log("Thank You");
+  }, 1000); // 5-second delay
+};
+
+// Call the functions
+Register(function(){
+    // console.log("apple is verry sweat")
+    Login(function(){
+        Thank();
+})
+})
+
+// console.log("thank you")});*/
+// --------------------------------------
+
+/*higher order function:
+const Welcome=(Tanu)=>{
+    setTimeout(() => {
+       document.write("Hi welcome this is Rani <br>")
+       Tanu() 
+    }, 2000);
+}
+Welcome(function(){
+    document.write("Hai mom")
+})*/
+// ---------------------------------------
+// promise=object it returns two objects:reslove or rejcet
+const Register = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      document.write("Please Register <br>");
+      resolve("Successful"); // Resolving the promise with a success message
+    }, 3000); // 3-second delay wait
+  });
+};
+const Login=()=>{
+    return new Promise((resolve,reject)=> {
+        setTimeout(()=> {
+        document.write("Please Login <br>");
+        resolve()
+        },1000)
+
+    })
+}
+    const Thankyou=()=>{  
+        setTimeout(()=>{
+           document.write("Thank You <br>");
+            },3000)
+            }
+   
+
+
+Register().then(Login).then(Thankyou)  // Will log "Successful" when the promise resolv});
+
+
+
+
+
+
+
+    </script>
+ </body>
+</html>
+    
+
